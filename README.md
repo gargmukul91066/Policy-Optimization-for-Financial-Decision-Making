@@ -123,92 +123,99 @@ Framed as an **Offline RL Problem** using the same dataset.
 - RL directly optimizes business return rather than accuracy.
 
 ---
+# 🚀 Reproducibility & Setup
 
-## 🚀 Reproducibility & Setup
+1️⃣ **Clone Repository**
+git clone https://github.com/gargmukul91066/Policy-Optimization-for-Financial-Decision-Making.git  
+cd Policy-Optimization-for-Financial-Decision-Making  
 
-### 1️⃣ Clone Repository
-```bash
-git clone https://github.com/gargmukul91066/Policy-Optimization-for-Financial-Decision-Making.git
-cd Policy-Optimization-for-Financial-Decision-Making
+---
+
+2️⃣ **Create Environment**
+conda create -n policyopt python=3.10 -y  
+conda activate policyopt  
+pip install -r requirements/requirements.txt  
+
+---
+
+3️⃣ **Add Dataset**  
+Download from Kaggle and place inside `/data/`:  
+data/accepted_2007_to_2018Q4.csv  
+
+---
+
+4️⃣ **Run Pipeline**
+# Step 1 – Preprocessing  
+jupyter notebook notebooks/01_EDA_and_Preprocessing.ipynb  
+
+# Step 2 – Supervised DL Model  
+jupyter notebook notebooks/02_Supervised_DL_Model.ipynb  
+
+# Step 3 – Offline RL Agent  
+jupyter notebook notebooks/03_Offline_RL_Agent.ipynb  
+
+---
+
+## 🧾 Requirements
+pandas==2.1.4  
+numpy==1.24.3  
+scikit-learn==1.2.2  
+imbalanced-learn==0.10.1  
+matplotlib==3.8.0  
+seaborn==0.12.2  
+tensorflow==2.13.0  
+torch==2.1.0  
+d3rlpy==2.8.1  
+
+---
+
+## 📊 Repository Structure
+Policy-Optimization-for-Financial-Decision-Making/  
+│  
+├── data/  
+│   ├── processed_loan_data.csv  
+│   ├── test_predictions.csv  
+│   └── README.md  
+│  
+├── models/  
+│   ├── keras_default_pred.h5  
+│   ├── discrete_cql_model/  
+│   └── cql_model_stabilized/  
+│  
+├── notebooks/  
+│   ├── 01_EDA_and_Preprocessing.ipynb  
+│   ├── 02_Supervised_DL_Model.ipynb  
+│   └── 03_Offline_RL_Agent.ipynb  
+│  
+├── results/  
+│   ├── ROC_Curve_Default_Prediction.png  
+│   ├── Model_Summary_MLP.png  
+│   └── metrics_summary.txt  
+│  
+├── requirements/  
+│   └── requirements.txt  
+│  
+├── LICENSE  
+└── README.md  
+
+---
+
+## 🧠 Key Takeaways  
+- Deep Learning → Risk Assessment  
+- Offline RL → Decision Optimization  
+- Combined Approach → Profit-Maximizing Credit Policy  
+
+---
+
+## 👤 Author  
+**Mukul Garg**  
+📧 LinkedIn | GitHub  
+
+---
+
+## 🪪 License  
+This project is licensed under the Apache License 2.0.  
+See LICENSE for details.
 
 
-2️⃣ Create Environment
-conda create -n policyopt python=3.10 -y
-conda activate policyopt
-pip install -r requirements/requirements.txt
 
-3️⃣ Add Dataset
-
-Download from Kaggle and place inside /data/:
-
-data/accepted_2007_to_2018Q4.csv
-
-4️⃣ Run Pipeline
-# Step 1 – Preprocessing
-jupyter notebook notebooks/01_EDA_and_Preprocessing.ipynb
-
-# Step 2 – Supervised DL Model
-jupyter notebook notebooks/02_Supervised_DL_Model.ipynb
-
-# Step 3 – Offline RL Agent
-jupyter notebook notebooks/03_Offline_RL_Agent.ipynb
-
-🧾 Requirements
-pandas==2.1.4
-numpy==1.24.3
-scikit-learn==1.2.2
-imbalanced-learn==0.10.1
-matplotlib==3.8.0
-seaborn==0.12.2
-tensorflow==2.13.0
-torch==2.1.0
-d3rlpy==2.8.1
-
-📊 Repository Structure
-Policy-Optimization-for-Financial-Decision-Making/
-│
-├── data/
-│   ├── processed_loan_data.csv
-│   ├── test_predictions.csv
-│   └── README.md
-│
-├── models/
-│   ├── keras_default_pred.h5
-│   ├── discrete_cql_model/
-│   └── cql_model_stabilized/
-│
-├── notebooks/
-│   ├── 01_EDA_and_Preprocessing.ipynb
-│   ├── 02_Supervised_DL_Model.ipynb
-│   └── 03_Offline_RL_Agent.ipynb
-│
-├── results/
-│   ├── ROC_Curve_Default_Prediction.png
-│   ├── Model_Summary_MLP.png
-│   └── metrics_summary.txt
-│
-├── requirements/
-│   └── requirements.txt
-│
-├── LICENSE
-└── README.md
-
-🧠 Key Takeaways
-
-Deep Learning → Risk Assessment
-
-Offline RL → Decision Optimization
-
-Combined Approach → Profit-Maximizing Credit Policy
-
-👤 Author
-
-Mukul Garg
-📧 LinkedIn
- | GitHub
-
-🪪 License
-
-This project is licensed under the Apache License 2.0.
-See LICENSE
- for details.
