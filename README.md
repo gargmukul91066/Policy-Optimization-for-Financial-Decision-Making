@@ -190,7 +190,7 @@ Policy-Optimization-for-Financial-Decision-Making/
 ├── results/  
 │   ├── ROC_Curve_Default_Prediction.png  
 │   ├── Model_Summary_MLP.png  
-│   └── metrics_summary.txt  
+│   └── metrics_summary.png 
 │  
 ├── requirements/  
 │   └── requirements.txt  
