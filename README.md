@@ -123,38 +123,51 @@ Framed as an **Offline RL Problem** using the same dataset.
 - RL directly optimizes business return rather than accuracy.
 
 ---
-# 🚀 Reproducibility & Setup
+## 🚀 Reproducibility & Setup
 
-1️⃣ **Clone Repository**
-git clone https://github.com/gargmukul91066/Policy-Optimization-for-Financial-Decision-Making.git  
-cd Policy-Optimization-for-Financial-Decision-Making  
-
----
-
-2️⃣ **Create Environment**
-conda create -n policyopt python=3.10 -y  
-conda activate policyopt  
-pip install -r requirements/requirements.txt  
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/gargmukul91066/Policy-Optimization-for-Financial-Decision-Making.git
+cd Policy-Optimization-for-Financial-Decision-Making
+```
 
 ---
 
-3️⃣ **Add Dataset**  
-Download from Kaggle and place inside `/data/`:  
-data/accepted_2007_to_2018Q4.csv  
+### 2️⃣ Create Environment
+```bash
+conda create -n policyopt python=3.10 -y
+conda activate policyopt
+pip install -r requirements/requirements.txt
+```
 
 ---
 
-4️⃣ **Run Pipeline**
-# Step 1 – Preprocessing  
-jupyter notebook notebooks/01_EDA_and_Preprocessing.ipynb  
+### 3️⃣ Add Dataset
+Download the dataset manually from **Kaggle** and place it inside the `/data/` directory:
 
-# Step 2 – Supervised DL Model  
-jupyter notebook notebooks/02_Supervised_DL_Model.ipynb  
-
-# Step 3 – Offline RL Agent  
-jupyter notebook notebooks/03_Offline_RL_Agent.ipynb  
+```bash
+data/accepted_2007_to_2018Q4.csv
+```
 
 ---
+
+### 4️⃣ Run the Pipeline
+Run the notebooks sequentially to reproduce the full workflow:
+
+```bash
+# Step 1 – Data Preprocessing & Feature Engineering
+jupyter notebook notebooks/01_EDA_and_Preprocessing.ipynb
+
+# Step 2 – Supervised Deep Learning Model
+jupyter notebook notebooks/02_Supervised_DL_Model.ipynb
+
+# Step 3 – Offline Reinforcement Learning Agent
+jupyter notebook notebooks/03_Offline_RL_Agent.ipynb
+```
+
+---
+
+✅ **Tip:** You can also open the notebooks directly in **VS Code** or **JupyterLab** for smoother execution.
 
 ## 🧾 Requirements
 pandas==2.1.4  
