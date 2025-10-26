@@ -222,13 +222,14 @@ Policy-Optimization-for-Financial-Decision-Making/
 
 ## 👤 Author  
 **Mukul Garg**  
-📧 LinkedIn | GitHub  
+📧 [LinkedIn](https://www.linkedin.com/in/mukul-garg-382726241/) | [GitHub](https://github.com/gargmukul91066)  
 
 ---
 
 ## 🪪 License  
-This project is licensed under the Apache License 2.0.  
-See LICENSE for details.
+This project is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).  
+See the [LICENSE](./LICENSE) file for more details.
+
 
 
 
